@@ -12,8 +12,7 @@ import Footer from "../../Components/Layout/Footer";
 import SVG from "react-inlinesvg";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import Carousel from 'react-material-ui-carousel'
 import * as s from "./styles/careers.style";
 import {
   IconTimeline,
@@ -309,7 +308,7 @@ const CareerPage = () => {
                     },
                   }}
                 >
-                  <Carousel responsive={responsive} showDots={true}>
+                  <Carousel  swipe={true} sx={{width:'100%'}}>
                     <Box
                       className="year-block-main"
                       sx={{
