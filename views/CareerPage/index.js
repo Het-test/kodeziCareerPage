@@ -243,7 +243,7 @@ const CareerPage = () => {
                           },
                         }}
                       >
-                        <SVG src={IconTimeline} />
+                        <SVG src={item?.icon} />
                         <Typography
                           sx={{
                             fontSize: "18px",
