@@ -6,6 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: "Inter", sans-serif;
   background: rgb(2, 8, 22);
+  overflow-x: hidden;
 }
 
 a {
@@ -25,4 +26,13 @@ a {
     color: white;
     background: black;
   }
+}
+/* slider css */
+.react-multi-carousel-dot button {
+  background-color: #373f53 !important;
+  border: none;
+  border-width: 0px !important;
+}
+.react-multi-carousel-dot--active button {
+  background-color: #fff !important;
 }

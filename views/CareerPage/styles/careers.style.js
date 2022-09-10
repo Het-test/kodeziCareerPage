@@ -1,20 +1,39 @@
 import styled from "styled-components";
 import { styled as Styled } from "@mui/system";
+import { theme } from "../../../utils/theme";
 
-export const HeaderBanner = styled.div`
-  background-repeat: no-repeat;
-  background-size: 1300px 1000px;
-  height: 100%;
-  background-position: top;
-  padding: 20px 0px 45px;
-  background-image: url("../../../images/assets/light.png");
-  position: relative;
-  font-family: "Inter", sans-serif;
-`;
-
-export const CareerBlock = Styled("div")({});
+export const HeaderBanner = Styled("div")(({ theme }) => ({
+  // [theme.breakpoints.down("xl")]: {
+  //   display: "none",
+  // },
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "1300px 1000px",
+  height: "100%",
+  backgroundPosition: "top",
+  padding: "20px 0px 45px",
+  backgroundImage: 'url("../../../images/assets/header-shade.png")',
+  position: "relative",
+  [theme.breakpoints.down("md")]: {
+    backgroundSize: "650px 400px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    backgroundSize: "550px 380px",
+  },
+}));
+export const CareerBlock = Styled("div")({
+  br: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
+});
 export const CareerBlockBottom = Styled("div")({
   position: "relative",
+  br: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
 });
 export const CareerBlockTimeline = Styled("div")({
   position: "relative",
@@ -42,11 +61,19 @@ export const CareerBlockTimeline = Styled("div")({
       },
     },
   },
+  br: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
 });
 export const FixEllipsImg = Styled("div")(({ theme }) => ({
   position: "absolute",
   right: 0,
   top: "0px",
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
   img: {
     width: "auto",
     height: "27vw",

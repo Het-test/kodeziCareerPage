@@ -1,12 +1,12 @@
+import React from "react";
 import { Container, Typography, Button, Grid } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
-import { Link as MUILink } from "@mui/material";
 import Link from "next/link";
 import SVG from "react-inlinesvg";
-import { logo, profile_icon } from "../../../assets/svgs/pageSvgs";
+import { logo } from "../../../assets/svgs/pageSvgs";
 
 import Item from "../../../Components/Item";
+import { theme } from "../../../utils/theme";
 
 const Footer = () => {
   return (
@@ -16,7 +16,19 @@ const Footer = () => {
         paddingBottom: "0px",
       }}
     >
-      <Container>
+      <Container
+        sx={{
+          [theme.breakpoints.down("lg")]: {
+            maxWidth: "900px",
+          },
+          [theme.breakpoints.down("md")]: {
+            maxWidth: "600px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            maxWidth: "100%",
+          },
+        }}
+      >
         <Box
           sx={{
             paddingTop: "0px",
@@ -30,6 +42,13 @@ const Footer = () => {
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
+            padding: "0px 20px",
+            [theme.breakpoints.down("md")]: {
+              padding: "0px 10px",
+              minHeight: "345px",
+              backgroundImage: `url(${"../../images/assets/banner-img-footer.svg"})`,
+              backgroundSize: "cover",
+            },
           }}
         >
           <Typography
@@ -40,6 +59,15 @@ const Footer = () => {
               fontFamily: "Inter",
               lineHeight: "56px",
               margin: "0px auto 40px",
+              [theme.breakpoints.down("md")]: {
+                fontSize: "36px",
+                lineHeight: "46px",
+                margin: "0px auto 20px",
+              },
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "28px",
+                lineHeight: "40px",
+              },
             }}
           >
             Start Writing Better Code Today!
@@ -64,6 +92,9 @@ const Footer = () => {
                 fontWeight: "600",
                 lineHeight: "14px",
                 height: "40px",
+                [theme.breakpoints.down("md")]: {
+                  bgcolor: "#31325c",
+                },
               }}
             >
               Download
@@ -75,10 +106,14 @@ const Footer = () => {
             paddingTop: "132px",
             paddingBottom: "65px",
             borderBottom: "1px solid #1D2539",
+            [theme.breakpoints.down("lg")]: {
+              paddingTop: "75px",
+              paddingBottom: "25px",
+            },
           }}
         >
           <Grid container spacing={2}>
-            <Grid item xs={5}>
+            <Grid item xl={5} lg={5} md={5} xs={12}>
               <Item
                 sx={{
                   background: "transparent",
@@ -87,7 +122,19 @@ const Footer = () => {
                   paddingTop: "0px",
                 }}
               >
-                <Box sx={{ paddingRight: "20px" }}>
+                <Box
+                  sx={{
+                    paddingRight: "20px",
+                    svg: {
+                      [theme.breakpoints.down("md")]: {
+                        width: "140px",
+                      },
+                      [theme.breakpoints.down("sm")]: {
+                        width: "90px",
+                      },
+                    },
+                  }}
+                >
                   <Link href="#">
                     <SVG src={logo} />
                   </Link>
@@ -100,6 +147,9 @@ const Footer = () => {
                       display: "flex",
                       alignItems: "center",
                       maxWidth: "220px",
+                      [theme.breakpoints.down("md")]: {
+                        marginTop: "20px",
+                      },
                     }}
                   >
                     <Box>
@@ -139,7 +189,7 @@ const Footer = () => {
                 </Box>
               </Item>
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xl={7} lg={7} md={7} xs={12}>
               <Item
                 sx={{
                   background: "transparent",
@@ -152,9 +202,20 @@ const Footer = () => {
                   sx={{
                     display: "flex",
                     justifyContent: "space-between",
+                    [theme.breakpoints.down("md")]: {
+                      flexWrap: "wrap",
+                    },
                   }}
                 >
-                  <Box>
+                  <Box
+                    sx={{
+                      [theme.breakpoints.down("md")]: {
+                        width: "50%",
+                        display: "block",
+                        marginBottom: "20px",
+                      },
+                    }}
+                  >
                     <Typography
                       sx={{
                         fontSize: "14px",
@@ -192,7 +253,15 @@ const Footer = () => {
                       <Link href="#">Kodezi Cloud</Link>
                     </Box>
                   </Box>
-                  <Box>
+                  <Box
+                    sx={{
+                      [theme.breakpoints.down("md")]: {
+                        width: "50%",
+                        display: "block",
+                        marginBottom: "20px",
+                      },
+                    }}
+                  >
                     <Typography
                       sx={{
                         fontSize: "14px",
@@ -230,7 +299,15 @@ const Footer = () => {
                       <Link href="#">VS Code</Link>
                     </Box>
                   </Box>
-                  <Box>
+                  <Box
+                    sx={{
+                      [theme.breakpoints.down("md")]: {
+                        width: "50%",
+                        display: "block",
+                        marginBottom: "20px",
+                      },
+                    }}
+                  >
                     <Typography
                       sx={{
                         fontSize: "14px",
@@ -280,7 +357,17 @@ const Footer = () => {
                       <Link href="#">Contact Us</Link>
                     </Box>
                   </Box>
-                  <Box>
+                  <Box
+                    sx={{
+                      // display: "flex",
+                      // justifyContent: "space-between",
+                      [theme.breakpoints.down("md")]: {
+                        width: "50%",
+                        display: "block",
+                        marginBottom: "20px",
+                      },
+                    }}
+                  >
                     <Typography
                       sx={{
                         fontSize: "14px",
@@ -390,6 +477,9 @@ const Footer = () => {
             display: "flex",
             padding: "20px 0px",
             justifyContent: "space-between",
+            [theme.breakpoints.down("md")]: {
+              flexDirection: "column",
+            },
           }}
         >
           <Typography
@@ -399,6 +489,11 @@ const Footer = () => {
               color: "#6F7687",
               fontFamily: "Inter",
               lineHeight: "26px",
+              [theme.breakpoints.down("md")]: {
+                fontSize: "12px",
+                lineHeight: "15px",
+                paddingBottom: "8px",
+              },
             }}
           >
             @ 2022 Kodezi Inc. All Rights Reserved
@@ -416,6 +511,10 @@ const Footer = () => {
                 fontFamily: "Inter",
                 lineHeight: "20px",
                 margin: "0px",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "12px",
+                  lineHeight: "15px",
+                },
               }}
             >
               <Link href="#">Terms of Service</Link>
@@ -428,6 +527,11 @@ const Footer = () => {
                 fontFamily: "Inter",
                 lineHeight: "20px",
                 paddingLeft: "20px",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "12px",
+                  lineHeight: "15px",
+                  paddingLeft: "10px",
+                },
               }}
             >
               <Link href="#">Privacy Policy</Link>
@@ -440,6 +544,11 @@ const Footer = () => {
                 fontFamily: "Inter",
                 lineHeight: "20px",
                 paddingLeft: "20px",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "12px",
+                  lineHeight: "15px",
+                  paddingLeft: "10px",
+                },
               }}
             >
               <Link href="#">Cookies Policy</Link>

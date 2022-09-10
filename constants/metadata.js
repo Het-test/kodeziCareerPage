@@ -13,7 +13,7 @@ import {
   trustSvgIcon,
   qualitySvgIcon,
 } from "../assets/svgs/pageSvgs";
-  
+
 export const metadataKodezi = {
   carrerPageFirstCards: [
     {
@@ -120,70 +120,72 @@ export const metadataKodezi = {
         "Our aim is to continue making the best product we can. We bias to action and shipped 37 releases in 2021, including big features such as our Extensions API and hundreds of bug fixes and improvements.",
     },
     {
-      title: 'We care about design',
-      description: 'Design is at the heart of the product and team. Every pixel and every detail matters. From icons, to the UI in both dark and light mode, illustrations, social media content, it all belongs to the same story.'
-    }
+      title: "We care about design",
+      description:
+        "Design is at the heart of the product and team. Every pixel and every detail matters. From icons, to the UI in both dark and light mode, illustrations, social media content, it all belongs to the same story.",
+    },
   ],
   moreThanJustJobContent: [
     {
-      icon: '/images/assets/company-stock.png',
-      title: 'Company stock options',
-      description: `We don't treat "act like an owner" as a phrase`
+      icon: "/images/assets/company-stock.png",
+      title: "Company stock options",
+      description: `We don't treat "act like an owner" as a phrase`,
     },
     {
-      icon: '/images/assets/parental-leave.png',
-      title: 'Parental leave',
-      description: 'We provide 3 months paid time off'
+      icon: "/images/assets/parental-leave.png",
+      title: "Parental leave",
+      description: "We provide 3 months paid time off",
     },
     {
-      icon: '/images/assets/competitve-salary.png',
-      title: 'Competitive salary',
-      description: 'We pay you a location independent rate'
+      icon: "/images/assets/competitve-salary.png",
+      title: "Competitive salary",
+      description: "We pay you a location independent rate",
     },
     {
-      icon: '/images/assets/build-your-workshop.png',
-      title: 'Build your workspace',
-      description: 'Order your own equipment to onboard'
+      icon: "/images/assets/build-your-workshop.png",
+      title: "Build your workspace",
+      description: "Order your own equipment to onboard",
     },
     {
-      icon: '/images/assets/health-perk.png',
-      title: 'Health perks',
-      description: 'From insurance to gym. Stay healthy!'
+      icon: "/images/assets/health-perk.png",
+      title: "Health perks",
+      description: "From insurance to gym. Stay healthy!",
     },
     {
-      icon: '/images/assets/professional-growth.png',
-      title: 'Professional growth hours',
-      description: 'Employees receive 40 paid hours a year.'
+      icon: "/images/assets/professional-growth.png",
+      title: "Professional growth hours",
+      description: "Employees receive 40 paid hours a year.",
     },
     {
-      icon: '/images/assets/end-of-year-bonus.png',
-      title: 'End of year bonus',
-      description: 'We value going the extra mile'
+      icon: "/images/assets/end-of-year-bonus.png",
+      title: "End of year bonus",
+      description: "We value going the extra mile",
     },
     {
-      icon: '/images/assets/sabbatical-policy.png',
-      title: 'Sabbatical policy',
-      description: '2 months paid sabbatical after completing 5 years of service.'
-    }
+      icon: "/images/assets/sabbatical-policy.png",
+      title: "Sabbatical policy",
+      description:
+        "2 months paid sabbatical after completing 5 years of service.",
+    },
   ],
   joinOurTeamContent: [
     {
-      title: 'Backend Engineer',
-      description: 'Santa Monica or Remote, Full Time'
+      title: "Backend Engineer",
+      description: "Santa Monica or Remote, Full Time",
     },
     {
-      title: 'Open Application',
-      description: 'Santa Monica or Remote, Full Time'
+      title: "Open Application",
+      description: "Santa Monica or Remote, Full Time",
     },
     {
-      title: 'Product Designer',
-      description: 'Santa Monica or Remote, Full Time'
+      title: "Product Designer",
+      description: "Santa Monica or Remote, Full Time",
     },
     {
-      title: 'Open Application',
-      description: 'Santa Monica or Remote, Full Time'
-    }
-  ]
+      title: "Open Application",
+      description: "Santa Monica or Remote, Full Time",
+    },
+  ],
 };
 
 export default function useMetadata(target) {

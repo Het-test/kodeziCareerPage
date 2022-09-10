@@ -15,8 +15,10 @@
     "@mui/material": "^5.10.4",
     "next": "12.2.5",
     "react": "18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "18.2.0",
     "react-inlinesvg": "^3.0.1",
+    "react-multi-carousel": "^2.8.2",
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.3.5"
   },
